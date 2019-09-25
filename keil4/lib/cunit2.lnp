@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\obj\startup_lpc177x_8x.o"
+".\obj\automated.o"
+".\obj\basic.o"
+".\obj\console.o"
+".\obj\cuerror.o"
+".\obj\mymem.o"
+".\obj\testdb.o"
+".\obj\testrun.o"
+".\obj\util.o"
+".\obj\test_cunit.o"
+--strict --scatter ".\obj\..\cunit2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\obj\..\cunit2.map" -o .\obj\..\cunit2.1
